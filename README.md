@@ -1,24 +1,30 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple api showcasing authentication with devise and doorkeeper gems.
 
-Things you may want to cover:
+* Ruby version : 2.5.1
 
-* Ruby version
+* Rails version : 5.2.0
 
-* System dependencies
+* **App initialization**
+```ruby
+# To setup the app for first run
+rake db:setup
+```
 
-* Configuration
+* **How to run the test suite**
+```ruby
+# To run all the tests
+rspec
+```
 
-* Database creation
+## API Endpoints
 
-* Database initialization
+| Verb | URL | Description |
+| :---: | :---: | :---: |
+| POST | /api/users | Creates a new user |
+| PUT | /api/users | Updates the given user |
+| DELETE | /api/users | Deletes the given user |
+| POST | /api/oauth/token | Generates an access_token |
+| POST | /api/oauth/revoke | Revokes the access_token |
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
