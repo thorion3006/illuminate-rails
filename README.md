@@ -10,6 +10,9 @@ A simple api showcasing authentication with devise and doorkeeper gems.
 ```ruby
 # To setup the app for first run
 rake db:setup
+
+# To start the server
+rails s
 ```
 
 * **How to run the test suite**
